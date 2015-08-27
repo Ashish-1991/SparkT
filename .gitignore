@@ -1,43 +1,41 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# use glob syntax.
+syntax: glob
+*.ser
+*.class
+*~
+*.bak
+#*.off
+*.old
 
-# Folder config file
-Desktop.ini
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.scala_dependencies
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# idea
+.idea
+*.iml
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# building
+target
+build
+null
+tmp*
+temp*
+dist
+test-output
+build.log
 
-# Windows shortcuts
-*.lnk
+# other scm
+.svn
+.CVS
+.hg*
 
-# =========================
-# Operating System Files
-# =========================
+# switch to regexp syntax.
+#  syntax: regexp
+#  ^\.pc/
 
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#SHITTY output not in target directory
+build.log
